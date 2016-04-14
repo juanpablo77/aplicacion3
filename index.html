@@ -1,0 +1,287 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Primera Aplicacion</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/app3.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--Grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/20160413_180738.jpg','imagenes/fabrica.jpg','imagenes/20160413_183207.jpg','imagenes/contaminacin.jpg','imagenes/Contaminacionn.jpg','imagenes/fertili.jpg','imagenes/contaminacion mexico.jpg')">
+<div data-role="page" id="Principal" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+   <h1>Contaminacion anbiental</h1>
+  </div>
+
+    
+   <div>
+    <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2>¿Que es La contaminacion?</h2>
+         <p>Da click para ver que es</p>
+      </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>Causas</h2>
+       <p>Da click para ver informacion</p>
+      </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>Consecuencias</h2>
+       <p>Da click para ver las consecuencias</p>
+      </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>Ideas Preventivas</h2>
+       <p>Da click para ver las ideas preventivas</p>
+      </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>Tipos de contaminacion</h2>
+       <p>Da click para ver los tipos de contaminacion</p>
+      </a>
+     </li>
+          <li class="ui-first-child ui-last-child">
+      <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>EN MI COMUNIDAD</h2>
+       <p>En el se muestra la contaminacion que hay en mi comunidad</p>
+      </a>
+     </li>
+   </ul>
+   </div>
+   <div data-role="footer" align="center" data-theme="a">
+      <div>
+        <img src="imagenes/basura_conta.png" width="46" height="46">
+      </div>
+      <div>
+       <h4>Aplicacion Tres</h4>
+       <h4>Juan Pablo Marín Frias</h4>
+      </div>
+     </div>
+    </div> 
+      
+   <div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>¿Que es la contaminacion?</h1>
+     </div>
+   <div data-role="content" align="center">
+    <div>
+     <h2>QUE ES LA CONTAMINACION AMBIENTAL??</h2>
+     <h2> Se denomina contaminación ambiental a la presencia en el ambiente de cualquier agente (físico, químico o biológico) o bien de una combinación de varios agentes en lugares, formas y concentraciones tales que sean o puedan ser nocivos para la salud, la seguridad o para el bienestar de la población, o bien, que puedan ser perjudiciales para la vida vegetal o animal, o impidan el uso normal de las propiedades y lugares de recreación y goce de los mismos. La contaminación ambiental es también la incorporación a los cuerpos receptores de sustancias sólidas, liquidas o gaseosas, o mezclas de ellas, siempre que alteren desfavorablemente las condiciones naturales del mismo, o que puedan afectar la salud, la higiene o el bienestar del público.
+       
+       A medida que aumenta el poder del hombre sobre la naturaleza y aparecen nuevas necesidades como consecuencia de la vida en sociedad, el medio ambiente que lo rodea se deteriora cada vez más. El comportamiento social del hombre, que lo condujo a comunicarse por medio del lenguaje, que posteriormente formó la cultura humana, le permitió diferenciarse de los demás seres vivos. Pero mientras ellos se adaptan al medio ambiente para sobrevivir, el hombre adapta y modifica ese mismo medio según sus necesidades.
+       El progreso tecnológico, por una parte y el acelerado crecimiento demográfico, por la otra, producen la alteración del medio, llegando en algunos casos a atentar contra el equilibrio biológico de la Tierra. No es que exista una incompatibilidad absoluta entre el desarrollo tecnológico, el avance de la civilización y el mantenimiento del equilibrio ecológico, pero es importante que el hombre sepa armonizarlos. Para ello es necesario que proteja los recursos renovables y no renovables y que tome conciencia de que el saneamiento del ambiente es fundamental para la vida sobre el planeta</h2>
+       </div>
+       </div>
+          <div data-role="main" class="ui-content">
+   <div data-role="collapsible" data-content-theme="false">
+     <h1>Fotos de contaminacion</h1>
+    <div>
+    <center>
+     <p> Estas son fotos de contaminacion:
+     <br>
+     </center>
+    </div>
+   <div>
+     <!-- Start WOWSlider.com -->
+<iframe src="visor/indexwow.html" style="width:960px;height:360px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+</div>
+</div>
+</div>
+   <div data-role="footer" data-theme="a">
+    <h4>Aplicacion Tres, Juan Pablo Marin Frias</h4>
+   </div>
+   </div>
+   </div>  
+    
+   <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a"> 
+   <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+   <h1>Causas de la contaminacion</h1>
+   </div>
+   <div data-role="content" align="center">
+    <div>
+    <h2>CAUSAS DE LA CONTAMINACION AMBIENTAL</h2>
+    <h2> • desechos sólidos domésticos</h2>
+    <h2><img src="imagenes/desechos.jpg" width="275" height="184"></h2>
+    <h2>• desechos sólidos industriales</h2>
+    <h2> <img src="imagenes/industriales.jpg" width="223" height="144"></h2>
+    <h2>• exceso de fertilizante y productos químicos</h2>
+    <p><img src="imagenes/fertili.jpg" width="275" height="183"></p>
+    <h2> • tala</h2>
+    <p><img src="imagenes/tala.jpg" width="275" height="183"></p>
+    <h2> • quema</h2>
+    <p><img src="imagenes/quema.jpg" width="259" height="194"></p>
+    <h2> • basura</h2>
+    <p><img src="imagenes/basura.jpg" width="276" height="183"></p>
+    <h2> • el monóxido de carbono de los vehículos</h2>
+    <p><img src="imagenes/veiculos.jpg" width="286" height="176"></p>
+    <h2> • desagües de aguas negras o contaminadas al mar o ríos </h2>
+    </div>
+    </div>
+    <div data-role="footer" data-theme="a">
+     <h4>Aplicacion Tres, Juan Pablo Marin Frias</h4>
+     </div>
+     </div>
+     </div>
+     
+    <div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>Conseciencias!!!</h1>
+    </div>
+    <div data-role="content" align="center">
+     <div>
+       <h2>CONSECUENCIAS DE LA CONTAMINACION AMBIENTAL</h2>
+       <h2>Las consecuencias de la contaminación son muchas, y como sabemos todas son malignas. En México, sobre todo en el Distrito Federal, la que más provoca daños es la contaminación ambiental. Es por eso que me enfocaré en las consecuencias que provocan las emisiones de vehículos y fábricas.</h2>
+       <p><img src="imagenes/basura.jpg" width="276" height="183"></p>
+       <h2> Las consecuencias en la salud por la presencia de Dióxido de Sulfuro y Dióxido de Nitrógeno, que son dos de los agentes más perjudiciales para la salud, son desde irritación de ojos, nariz y garganta hasta infecciones respiratorias, como bronquitis y neumonía. Y a largo plazo puede significar infecciones respiratorias crónicas, cáncer de pulmón, problemas cardíacos e incluso daño cerebral y en el sistema nervioso.</h2>
+       <p><img src="imagenes/Contaminacionn.jpg" width="276" height="183"></p>
+                 <div data-role="main" class="ui-content">
+   <div data-role="collapsible" data-content-theme="false">
+     <h1>Da click para ver mas fotos</h1>
+    <div>
+     <p>Estas son fotos de contaminacion:
+     <br>
+    </div>
+   <div>
+     <p><img src="imagenes/contaminacin.jpg" width="317" height="187"></p>
+         <!-- Start WOWSlider.com -->
+    <iframe src="visor/indexwow2.html" style="width:960px;height:360px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+    <!-- End WOWSlider.com -->
+     </div>
+     </div>
+    </div>
+     </div>
+      </div>
+      <div data-role="footer" data-theme="a">
+      <h4>Aplicacion Tres, Juan Pablo Marin Frias</h4>
+      </div>
+      </div>
+      </div>
+      
+      
+      <div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+        <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+         <h1>Ideas Preventivas</h1>
+        </div>
+        <div data-role="content" align="center">
+          <div>
+           <h2>PREVENCION DE LA CONTAMINACION AMBIENTAL    </h2>
+           <h2>• no quemar ni talar plantas             </h2>
+           <h2>• controlar el uso de fertilizantes y pesticidas</h2>
+           <h2> • no botar basura en lugares inapropiados</h2>
+           <h2> • regular el servicio de aseo urbano</h2>
+           <h2> • crear conciencia ciudadana</h2>
+           <h2> • crear vías de desagües para las industrias que no lleguen a los mares ni ríos utilizados para el servicio o consumo del hombre ni animales             </h2>
+           <h2>• controlar los derramamientos accidentales de petróleo</h2>
+           <h2> • controlar los relaves mineros</h2>
+           <!-- Start WOWSlider.com -->
+<iframe src="visor/indexwow3.html" style="width:960px;height:360px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+        </div> 
+      </div>
+      <div data-role="footer" data-theme="a">
+       <h4>Aplicacion Tres,Juan Pablo Marin Fias</h4>
+       </div>
+       </div>
+       </div>
+       
+       <div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+        <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+         <h1>Tipos de contaminacio</h1>
+        </div>
+        <div data-role="content" align="center">
+        <div>
+         <h2>TIPOS DE CONTAMINACION      </h2>
+         <h2>Contaminación del agua: es la incorporación al agua de materias extrañas, como microorganismos, productos químicos, residuos industriales, y de otros tipos o aguas residuales. Estas materias deterioran la calidad del agua y la hacen inútil para los usos pretendidos.</h2>
+         <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image16','','imagenes/contaminacin.jpg',1)"><img src="imagenes/toxicooo.jpg" width="254" height="198" id="Image16"></a></p>
+         <h2> Contaminación del suelo: es la incorporación al suelo de materias extrañas, como basura, desechos tóxicos, productos químicos, y desechos industriales. La contaminación del suelo produce un desequilibrio físico, químico y biológico que afecta negativamente las plantas, animales y humanos.</h2>
+         <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image17','','imagenes/Contaminacionn.jpg',1)"><img src="imagenes/toxicooo.jpg" width="254" height="198" id="Image17"></a></p>
+         <h2> Contaminación del aire: es la adición dañina a la atmósfera de gases tóxicos, CO, u otros que afectan el normal desarrollo de plantas, animales y que afectan negativamente la salud de los humanos</h2>
+         <p>&nbsp;</p>
+         <p>&nbsp;</p>
+         <h2> CONTAMINACION AMBIENTAL SEGUN EL CONTAMINANTE           </h2>
+         <h2>Contaminación química: refiere a cualquiera de las comentadas en los apartados anteriores, en las que un determinado compuesto químico se introduce en el medio.</h2>
+         <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image18','','imagenes/fertili.jpg',1)"><img src="imagenes/toxico.jpg" width="300" height="168" id="Image18"></a></p>
+         <h2> Contaminación radiactiva: es aquella derivada de la dispersión de materiales radiactivos, como el uranio enriquecido, usados en instalaciones médicas o de investigación, reactores nucleares de centrales energéticas, munición blindada con metal aleado con uranio, submarinos, satélites artificiales, etc., y que se produce por un accidente (como el accidente de Chernóbil), por el uso ó por la disposición final deliberada de los residuos radiactivos.</h2>
+         <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image19','','imagenes/contaminacion mexico.jpg',1)"><img src="imagenes/toxico.jpg" width="300" height="168" id="Image19"></a></p>
+         
+        </div>
+         </div>
+         <div data-role="footer" data-theme="a">
+           <h4>Aplicacion Tres, Juan Pablo Marin Frias</h4>
+           </div>
+           </div>
+           </div>
+           <div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+        <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+         <h1>EN MI COMUNIDAD</h1>
+        </div>
+        <div data-role="content" align="center">
+        <div>
+         <h2>Que tipo de contaminacion hay en  mi comunidad??         </h2>
+         <h2>En mi comunidad hay contaminacion visual</h2>
+         <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image13','','imagenes/20160413_180738.jpg',1)"><img src="imagenes/visual.jpg" width="267" height="189" id="Image13"></a></p>
+         <h2>Hay contaminacion auditiva</h2>
+         <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image14','','imagenes/fabrica.jpg',1)"><img src="imagenes/auditiva.jpg" width="284" height="178" id="Image14"></a></p>
+         <h2>Hay  contaminacion anbiental</h2>
+         <p><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image15','','imagenes/20160413_183207.jpg',1)"><img src="imagenes/toxico.jpg" width="300" height="168" id="Image15"></a></p>
+                   <div data-role="main" class="ui-content">
+   <div data-role="collapsible" data-content-theme="false">
+     <h1>Como puedo contribuir para acabar con ella</h1>
+    <div>
+     <p>Como puedo contribuir:
+     <br>
+    </div>
+   <div>
+     <h2>Puedo contribuir pintando en los lugares grafitiados.</h2>
+     <h2> Puedo pedir que vajen el volumen y traten de no utilizar las maquinas de la fabrica.</h2>
+     <h2>Puedo hacer aceo con mis vecinos para acvar con la contaminacion anviental.</h2>
+     </div>
+     </div>
+    </div>
+        </div>
+         </div>
+         <div data-role="footer" data-theme="a">
+           <h4>Aplicacion Tres, Juan Pablo Marin Frias</h4>
+           </div>
+           </div>
+           </div>
+</body>
+</html>
